@@ -164,12 +164,12 @@ br.clear {
 #ecosystem section.startups h3::before{
     content: "";
     height: 10px;
-    width: 100%;
+    width: 50%;
     background: url('../images/line.svg')no-repeat;
     position: absolute;
     top: 35px;
     background-size: 220px;
-    left: 125px;
+    left: 112px;
     z-index: -1;
 }
 #ecosystem section.startups h3 span.heading { 
@@ -1188,7 +1188,7 @@ footer p.copyright {
         width: 64%;
     }
     #ecosystem section.startups h3::before {
-        left: 25px;
+        left: 20px;
     }
     #ecosystem section.startups p {
         width: 90%;
@@ -1303,6 +1303,10 @@ footer p.copyright {
     #ecosystem section.startups ul li img {
         height: 100%;
     }
+    #ecosystem section.startups h3::before {
+        left: 0px;
+        width: 50%;
+    }
     #aim section.content {
         width: 95%;
     }
@@ -1368,6 +1372,9 @@ footer p.copyright {
         left: 65px;
         width: 180px;
     }
+    #upcoming section.top h3 span.line {
+        right: 56px;
+    }
     #upcoming ul li span.icon {
         width: 40px;
     }
@@ -1403,7 +1410,7 @@ footer p.copyright {
     #ecosystem section.startups h3::before {
         left: 100px;
         top: 40px;
-        width: 34%;
+        width: 33%;
     }
     #ecosystem section.startups {
         width: 100%;
@@ -1420,7 +1427,7 @@ footer p.copyright {
         width: 45%;
     }
     #aim section.content div.right {
-        width: 80%;
+        width: 100%;
     }
     #projects section.content div.left h3 {
         font-size: 32px;
@@ -1496,11 +1503,11 @@ footer p.copyright {
     #techies_park section.top h3::before {
         left: 50px;
     }
-    #village section.content div.left h3::before {
-        left: 25px;
-    }
     #village section.content div.left h3 {
         width: 50%;
+    }
+    #village section.content div.left h3::before {
+        left: 60px;
     }
     #upcoming section.top h3 span.line {
         right: 35px;
@@ -1683,7 +1690,7 @@ footer p.copyright {
     }
     #ecosystem section.startups h3::before {
         left: 32px;
-        width: 41%;
+        width: 43%;
         top: 30px;
     }
     #ecosystem section.startups h3 span.heading {
@@ -1793,7 +1800,8 @@ footer p.copyright {
         font-size: 20px;
     }
     #village section.content div.left h3::before {
-        left: 30px;
+        left: 50px;
+        bottom: -5px;
         width: 130px;
     }
     #village section.content div.left ul li{
@@ -1815,7 +1823,7 @@ footer p.copyright {
         font-size: 20px;
     }
     #upcoming section.top h3 span.line {
-		right: 63px;
+		right: 0px;
 		width: 100px;
 		}
     #upcoming ul li div.course div.content h4 {
@@ -1932,6 +1940,9 @@ footer p.copyright {
         width: 40px;
         top: 40%;
     }
+    #village section.content div.left h3::before {
+        left: 35px;
+    }
     #upcoming{
         padding-top: 60px;
     }
@@ -1959,5 +1970,13 @@ footer p.copyright {
     }
     footer ul li.item div.social a.icon{
         margin-right: 0;
+    }
+}
+@media all and (max-width:360px){
+    #upcoming section.top h3 span.line {
+        right: 55px;
+    }
+    #village section.content div.left h3::before {
+        left: 20px;
     }
 }
