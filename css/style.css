@@ -624,7 +624,7 @@ br.clear {
     position: sticky;
     top: 110px;
     border: 1px solid rgba(150, 202, 76, 0.353);
-    padding: 35px;
+    padding: 35px 35px 20px;
     border-radius: 15px;
     max-height: 750px;
 }
