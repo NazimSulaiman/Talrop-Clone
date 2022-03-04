@@ -1,0 +1,1963 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+	font-family: "Gordita Regular";
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "Gordita Regular";
+	font-weight: 500;
+}
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Gordita Regular";
+	font-weight: 500;
+	color: #757474;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 85%;
+	margin: 0 auto;
+	max-width:1325px;
+}
+@font-face {
+    font-family: 'Gordita Bold';
+    src: url('../fonts/Gordita-Bold.woff2') format('woff2'),
+        url('../fonts/Gordita-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita Regular';
+    src: url('../fonts/Gordita-Regular.woff2') format('woff2'),
+        url('../fonts/Gordita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita Medium';
+    src: url('../fonts/Gordita-Medium.woff2') format('woff2'),
+        url('../fonts/Gordita-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+#home { 
+    background:url('../images/spotlight-bg.png')no-repeat;
+    background-size: cover;
+    background-position:center bottom;
+}
+#home section.bg{
+    background: url('../images/spotlight.png')no-repeat;
+    background-position: right top;
+    background-size: contain;
+    padding-top: 50px;
+}
+#home header h1 { 
+    width: 80px;
+}
+#home header h1 a { 
+    display: block;
+}
+#home header h1 a img { 
+    display: block;
+    width: 100%;
+}
+#home section.spotlight { 
+    padding: 150px 0px 200px;
+}
+#home section.spotlight div.left { 
+    width: 48%;
+}
+#home section.spotlight div.left h2 { 
+    font-size: 55px;
+    font-family: 'Gordita Medium';
+}
+#home section.spotlight div.left h2 span.heading { 
+    font-family: 'Gordita Bold';
+    color: rgb(11, 190, 97);
+    display: block;
+}
+#home section.spotlight div.left p { 
+    font-family: 'Gordita Regular';
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#ecosystem { 
+    padding: 20px 0px 100px;
+}
+#ecosystem section.startups { 
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+#ecosystem section.startups h3 { 
+    position: relative;
+    font-size: 34px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Gordita Medium';
+}
+#ecosystem section.startups h3::before{
+    content: "";
+    height: 10px;
+    width: 100%;
+    background: url('../images/line.svg')no-repeat;
+    position: absolute;
+    top: 35px;
+    background-size: 220px;
+    left: 125px;
+    z-index: -1;
+}
+#ecosystem section.startups h3 span.heading { 
+    font-size: 34px;
+    color: rgb(11, 190, 97);
+}
+#ecosystem section.startups p { 
+    width: 63%;
+    margin: 20px auto 40px;
+}
+#ecosystem section.startups ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto;
+}
+#ecosystem section.startups ul li { 
+    height: 40px;
+    margin-bottom: 30px;
+}
+#ecosystem section.startups ul li img { 
+    height: 100%;
+    padding: 0 15px;
+}
+
+#aim { 
+    padding-bottom: 150px;
+}
+#aim section.content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#aim section.content div.left { 
+    width: 32%;
+}
+#aim section.content div.left img { 
+    width: 100%;
+    display: block;
+}
+#aim section.content div.right { 
+    width: 63%;
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-position: top left;
+    background-size: 200px;
+}
+#aim section.content div.right h3 { 
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-family: 'Gordita Medium';
+    width: 75%;
+    position: relative;
+}
+#aim section.content div.right h3::before{
+    content: "";
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+#projects { 
+    padding-bottom: 100px;
+}
+#projects section.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#projects section.content div.left { 
+    width: 40%;
+}
+#projects section.content div.left h3 { 
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-family: 'Gordita Medium';
+    position: relative;
+}
+#projects section.content div.left h3::before{
+    content: "";
+    height: 200px;
+    width: 200px;
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: 20px;
+}
+#projects section.content div.right {
+    width: 50%; 
+}
+#projects section.content div.right ul { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#projects section.content div.right ul li { 
+    width: 47%;
+    padding: 20px;
+    border: 1px solid rgba(150, 202, 76, 0.353);
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+#projects section.content div.right ul li:first-child{
+    transform: translateY(50px);
+}
+#projects section.content div.right ul li:nth-child(3){
+    transform: translateY(50px);
+}
+#projects section.content div.right ul li:hover{
+    border: 1px solid rgb(11, 190, 97);
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+}
+#projects section.content div.right ul li div.img_container { 
+    width: 100%;
+    margin-bottom: 20px;
+}
+#projects section.content div.right ul li div.img_container img { 
+    display: block;
+    width: 100%;
+}
+#projects section.content div.right ul li h4 { 
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Gordita Medium';
+}
+#projects section.content div.right ul li p { 
+    font-size: 14px;
+}
+
+#startups { 
+    padding: 100px 0 100px;
+    background-color: rgb(249, 249, 249);
+}
+#startups section.top { 
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+#startups section.top h3 { 
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-family: 'Gordita Medium';
+}
+#startups section.top h3::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background:url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: -1;
+    filter: blur(30px);
+}
+#startups section.bottom ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#startups section.bottom ul li { 
+    width: 23%;
+    min-height: 350px;
+    border-radius: 15px;
+    border: 1px solid rgba(150, 202, 76, 0.353);
+    padding: 80px 25px 20px;
+    position: relative;
+    margin: 100px 20px 0px 0px;
+    position: relative;
+    background:#fff;
+}
+#startups section.bottom ul li:hover{
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+}
+#startups section.bottom ul li span.border { 
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgb(11, 190, 97);
+    border-radius: 50%;
+    padding: 6px;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: -55px;
+    z-index: 0;
+}
+#startups section.bottom ul li span.border span.image { 
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    background:#fff;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#startups section.bottom ul li span.border span.image img { 
+    display: block;
+    width: 75%;
+    overflow: hidden;
+}
+#startups section.bottom ul li h4 { 
+    font-size: 18px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 15px;
+}
+#startups section.bottom ul li p { 
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+#startups section.bottom ul li a.link { 
+    padding: 15px;
+    font-size: 14px;
+    background: rgb(213, 240, 230);
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    color: rgb(15, 167, 111);
+    font-family: 'Gordita Medium';
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#team { 
+    padding: 120px 0 100px;
+}
+#team h3 { 
+    font-size: 34px;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    font-family: 'Gordita Medium';
+    position: relative;
+}
+#team h3::after{
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+}
+#team ul { 
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 94%;
+}
+#team ul li { 
+    width: 23%;
+    text-align: center;
+    margin: 0px 20px 30px 0px;
+}
+#team ul li div.img_container { 
+    border: 1px solid rgba(150, 202, 76, 0.353);
+    border-radius: 15px;
+    padding: 15px;
+}
+#team ul li div.img_container img { 
+    width: 100%;
+    display: block;
+}
+#team ul li h5 { 
+    margin-top: 20px;
+    font-family: 'Gordita Medium';
+    font-size: 16px;
+}
+#team ul li small { 
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+}
+#team ul li a {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 5px;
+    background: rgb(43, 126, 188);
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+    margin: 0 auto;
+}
+#team ul li a span.image {
+    display: inline-block;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+#team ul li a span.image img {
+    height: 15px;
+    display: block;
+}
+#team ul li a span.label {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Gordita Medium';
+    margin-left: 7px;
+}
+
+#ambassador div.banner { 
+    width: 72%;
+    margin: 0 auto;
+}
+#ambassador div.banner img { 
+    display: block;
+    width: 100%;
+}
+#ambassador div.responsive { 
+    width: 72%;
+    margin: 0 auto;
+}
+#ambassador div.responsive img { 
+    display: none;
+    width: 100%;
+}
+
+#interest { 
+    padding: 230px 0px;
+}
+#interest section.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#interest section.content div.left { 
+    width: 28%;
+}
+#interest section.content div.left h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+}
+#interest section.content div.right { 
+    width: 66%;
+}
+#interest section.content div.right ul { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#interest section.content div.right ul li { 
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+#interest section.content div.right ul li div.image { 
+    width: 12%;
+    margin-right: 15px;
+}
+#interest section.content div.right ul li div.image  img { 
+    display: block;
+    width: 100%;
+}
+#interest section.content div.right ul li div.content { 
+    width: 86%;
+}
+#interest section.content div.right ul li div.content h4 { 
+    font-size: 20px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 10px;
+}
+#interest section.content div.right ul li div.content p { 
+    font-size: 16px;
+}
+
+#mission { 
+    padding-bottom: 100px;
+}
+#mission section.content { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#mission section.content div.left { 
+    width: 50%;
+    position: relative;
+}
+#mission section.content div.left h3 { 
+    font-size: 34px;
+    margin-bottom: 55px;
+    font-family: 'Gordita Medium';
+    position: relative;
+}
+#mission section.content h3.responsive{
+    display: none;
+    font-size: 27px;
+    margin-bottom: 55px;
+    font-family: 'Gordita Medium';
+    position: relative;
+    text-align: center;
+}
+#mission section.content div.left h3::before{
+    content: "";
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: -22px;
+    z-index: -1;
+}
+#mission section.content h3.responsive::before{
+    content: "";
+    background: url('../images/backgrounds-color.png')no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: 80px;
+    z-index: -1;
+}
+#mission section.content div.left ul li { 
+    margin-bottom: 63px;
+}
+#mission section.content div.left ul li:last-child { 
+    margin-bottom: 0px;
+}
+#mission section.content div.left ul li h4 { 
+    font-size: 20px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 15px;
+}
+#mission section.content div.left ul li p { 
+    line-height: 1.8em;
+}
+#mission section.content div.right { 
+    width: 35%;
+    position: sticky;
+    top: 110px;
+    border: 1px solid rgba(150, 202, 76, 0.353);
+    padding: 35px;
+    border-radius: 15px;
+    max-height: 750px;
+}
+#mission section.content div.right h1 { 
+    width: 80px;
+    margin:0px auto 20px;
+}
+#mission section.content div.right h1 a { 
+    display: block;
+    width: 100%;
+}
+#mission section.content div.right h1 a img { 
+    display: block;
+    width: 100%;
+}
+#mission section.content div.right h5{
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+#mission section.content div.right h5::before { 
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: rgb(27, 202, 27);
+    position: absolute;
+    left: -10px;
+}
+#mission section.content div.right p { 
+    margin-bottom: 20px;
+}
+
+#program { 
+    padding: 100px 0px;
+}
+#program h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 80px;
+    text-align: center;
+}
+#program ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#program ul li {
+    width: 31%;
+    border: 1px solid rgba(150, 202, 76, 0.353);
+    border-radius: 20px;
+    padding: 80px 30px 30px;
+    position: relative;
+    margin:0px 30px 100px 0;
+    min-height: 400px;
+}
+#program ul li:hover{
+    box-shadow: rgb(0 0 0 / 9%) 20px 23px 25px;
+    transition: all 0.3s ease-in-out;
+}
+#program ul li span.icon { 
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: 24px;
+    width: 80px;
+    box-shadow: rgb(0 0 0 / 10%) 8px 14px 16px;
+}
+#program ul li span.icon img { 
+    display: block;
+    width: 100%;
+}
+#program ul li h4 { 
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Gordita Medium';
+}
+#program ul li p { 
+    font-size: 15px;
+}
+#program ul li div.enquiry { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+#program ul li div.enquiry span.label { 
+    color: rgb(15, 167, 111);
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+#program ul li div.enquiry div.icons a.contact { 
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#program ul li div.enquiry div.icons a.contact img { 
+    display:block;
+    width: 100%;
+}
+
+#techies_park { 
+    padding-bottom: 100px;
+}
+#techies_park section.top { 
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+#techies_park section.top h3 { 
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-family: 'Gordita Medium';
+    position: relative;
+}
+#techies_park section.top h3::before{
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 130px;
+    width: 233px;
+    height: 221px;
+    z-index: -1;
+    background: url('../images/backgrounds-color.png') no-repeat;
+    background-size: contain;
+}
+#techies_park section.top p { 
+    margin-bottom: 55px;
+}
+#techies_park ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#techies_park ul li {
+    width: 25%;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#techies_park ul li:hover{
+    background: rgb(249, 249, 249);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-15px);
+}
+#techies_park ul li div.park div.img_container { 
+    width: 100%;
+}
+#techies_park ul li div.park div.img_container img { 
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+#techies_park ul li div.park h5 { 
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+    margin-top: 15px;
+}
+#techies_park ul li a.direction {
+    background: rgb(229, 245, 239);
+    border: 1px solid rgb(26, 218, 147);
+    width: 50%;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+#techies_park ul li a.direction span.image { 
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#techies_park ul li a.direction span.image img { 
+    width: 100%;
+    display: block;
+}
+#techies_park ul li a.direction span.label { 
+    color: rgb(15, 167, 111);
+    font-size: 16px;
+}
+
+#village section.content { 
+    background: rgb(249, 249, 249);
+    padding: 100px 60px 80px 87px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+#village section.content div.left { 
+    width: 38%;
+}
+#village section.content div.left h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    position: relative;
+    margin-bottom: 40px;
+}
+#village section.content div.left h3::before{
+    content: "";
+    width: 220px;
+    height: 10px;
+    background: url('../images/line.svg')no-repeat;
+    background-size: 220px;
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+}
+#village section.content div.left ul li { 
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+#village section.content div.left ul li span.img_container {
+    display: inline-block;
+    margin-right: 10px;
+}
+#village section.content div.left ul li span.img_container img {
+    display: block;
+    width: 30px;
+}
+#village section.content div.left ul li p { 
+    font-size: 14px;
+}
+#village section.content div.right { 
+    width: 58%;
+    position: relative;
+}
+#village section.content div.right div.img_container { 
+    width: 100%;
+}
+#village section.content div.right div.img_container img { 
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+#village section.content div.right a.image { 
+    display: inline-block;
+    width: 80px;
+    position: absolute;
+    top: 42%;
+    left: 44%;
+}
+#village section.content div.right a.image img { 
+    display: block;
+    width: 100%;
+}
+
+#upcoming { 
+    padding: 130px 0px;
+}
+#upcoming section.top { 
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+#upcoming section.top h3 { 
+    position: relative;
+    font-size: 32px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 30px;
+}
+#upcoming section.top h3 span.line{
+    position: absolute;
+    width: 160px;
+    display: inline-block;
+    bottom: 0px;
+    right: 150px;
+}
+#upcoming section.top h3 span.line img{
+    display: block;
+    width: 100%;
+}
+#upcoming section.top h3::before{
+    content: "";
+    height: 200px;
+    width: 200px;
+    background: url('../images/backgrounds-color.png')no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -1;
+    right: 210px;
+    top: -40px;
+}
+#upcoming ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+#upcoming ul li { 
+    width: 31%;
+    padding: 25px 20px;
+    border: 1px solid rgb(214, 236, 212);
+    border-radius: 15px;
+    display: flex;
+    margin-right: 25px;
+    justify-content: space-between;
+}
+#upcoming ul li span.icon { 
+    width: 50px;
+    display: inline-block;
+}
+#upcoming ul li span.icon img { 
+    display: block;
+    width: 100%;
+}
+#upcoming ul li div.course { 
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#upcoming ul li div.course div.content h4 { 
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Gordita Medium';
+}
+#upcoming ul li div.course div.content span.year { 
+    font-family: 'Gordita Medium';
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: rgb(15, 167, 111);
+}
+#upcoming ul li div.course div.content p { 
+    font-size: 14px;
+}
+#upcoming ul li div.course div.admission { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+#upcoming ul li div.course div.admission span.label { 
+    color: rgb(15, 167, 111);
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+#upcoming ul li div.course div.admission div.images span.img { 
+    width: 45px;
+    display: inline-block;
+}
+#upcoming ul li div.course div.admission div.images span.img img { 
+    display: block;
+    width: 100%;
+}
+
+footer { 
+    background: rgb(30, 30, 30);
+    padding: 100px 0px 50px;
+}
+footer ul { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer ul li.item.large { 
+    width: 30%;
+}
+footer ul li.item { 
+    width: 15%;
+}
+footer ul li.item h1 { 
+    width: 70px;
+    margin-bottom: 30px;
+}
+footer ul li.item h1 a { 
+    display: block;
+    width: 100%;
+}
+footer ul li.item h1 a img { 
+    display: block;
+    width: 100%;
+}
+footer ul li.item p.address { 
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    width: 85%;
+    line-height: 1.9em;
+}
+footer ul li.item h5 { 
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+footer ul li.item a.link { 
+    color: rgb(170, 170, 170);
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer ul li.item div.social{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 25px;
+}
+footer ul li.item div.social a.icon{
+    height: 20px;
+    display: inline-block;
+    margin-right: 15px;
+}
+ footer ul li.item div.social a.icon img{
+    filter: grayscale(1);
+    display: block;
+    height: 100%;
+}
+footer ul li.item div.social a.icon:hover img{
+    filter: grayscale(0);
+}
+footer ul li.item div.social a.icon img.second{
+    display: block;
+    width: 100%;
+}
+footer p.copyright { 
+    text-align: center;
+    color: rgb(170, 170, 170);
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+@media all and (max-width:1440px){
+    #home section.bg {
+        background-size: 48%;
+    }
+    #aim section.content div.right h3{
+        width: 90%;
+    }
+    #team ul li a {
+        width: 70%;
+    }
+}
+
+@media all and (max-width:1280px){
+    #home section.spotlight{
+        padding-bottom: 150px;
+    }
+    #home section.spotlight div.left h2{
+        font-size: 48px;
+    }
+    #home section.spotlight div.left {
+        width: 54%;
+    }
+    #ecosystem section.startups h3::before{
+        left: 65px;
+    }
+    #ecosystem section.startups p {
+        width: 75%;
+    }
+    #ecosystem section.startups ul{
+        width: 75%;
+    }
+    #aim section.content div.right h3 {
+        font-size: 32px;
+        width: 80%;
+    }
+    #aim section.content{
+        width: 90%;
+    }
+    #startups{
+        padding-bottom: 50px;
+    }
+    #startups section.top h3 {
+        font-size: 32px;
+    }
+    #startups section.top {
+        width: 55%;
+    }#startups section.bottom ul li {
+        width: 31%;
+    }
+    #team h3 {
+        font-size: 32px;
+        width: 25%;
+    }
+    #team ul{
+        width: 70%;
+    }
+    #team ul li {
+        width: 30%;
+    }
+    #team ul li a {
+        width: 82%;
+    }
+    #interest section.content div.left {
+        width: 90%;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+    #interest section.content div.right {
+        width: 100%;
+    }
+    #interest section.content div.right ul li div.image {
+        width: 10%;
+    }
+    #program ul li {
+        width: 30%;
+        min-height: 400px;
+    }
+    #mission section.content div.left {
+        width: 55%;
+    }
+    #techies_park section.top h3::before{
+        left: 150px;
+    }
+    #techies_park section.top {
+        width: 60%;
+    }
+    #techies_park ul li {
+        width: 30%;
+    }
+    #mission section.content div.right {
+        width: 42%;
+    }
+    #village section.content {
+        padding: 50px 30px 40px 40px;
+    }
+    #village section.content div.left {
+        width: 46%;
+    }
+    #village section.content div.right {
+        width: 51%;
+    }
+    #village section.content div.left h3 {
+        font-size: 32px;
+    }
+    #upcoming section.top h3 span.line {
+        right: 100px;
+    }
+    #upcoming section.top h3::before{
+        right: 140px;
+    }
+    #upcoming ul li {
+        width: 46%;
+        margin-bottom: 30px;
+    }
+    footer ul li.item {
+        width: 18%;
+    }
+    footer ul li.item.large{
+        width: 28%;
+    }
+}
+
+@media all and (max-width:1080px){
+    #home section.spotlight div.left {
+        width: 64%;
+    }
+    #ecosystem section.startups h3::before {
+        left: 25px;
+    }
+    #ecosystem section.startups p {
+        width: 90%;
+    }
+    #ecosystem section.startups ul {
+        width: 70%;
+    }
+    #aim section.content div.right h3 {
+        width: 90%;
+    }
+    #projects section.content div.left {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+    #projects section.content div.right {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #projects section.content div.left h3{
+        width: 60%;
+        margin: 0 auto 30px;
+    }
+    #projects section.content div.left h3::before{
+        left: 120px;
+    }
+    #startups section.top {
+        width: 65%;
+    }
+    #startups section.bottom ul li span.border {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+    }
+    #startups section.bottom ul li span.border span.image{
+        width: 85px;
+        height: 85px;
+    }
+    #mission section.content div.left h3 {
+        font-size: 27px;
+    }
+    #mission section.content div.right {
+        max-height: 860px;
+    }
+    #team ul {
+        width: 80%;
+    }
+    #program ul li {
+        width: 46%;
+    }
+    #techies_park section.top {
+        width: 70%;
+    }
+    #program ul li{
+        min-height: 360px;
+    }
+    #techies_park ul li {
+        width: 33%;
+    }
+    #village section.content div.left ul li span.img_container {
+        margin-right: 15px;
+    }
+    #upcoming section.top h3 {
+        font-size: 27px;
+    }
+    #upcoming section.top h3 span.line {
+        right: 80px;
+        width: 130px;
+    }
+    footer ul li.item.large {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+    footer ul li.item h1{
+        margin: 0 auto;
+    }
+    footer ul li.item.large p{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    footer ul li.item.large p br{
+        display: none;
+    }
+    footer p.copyright {
+        font-size: 12px;
+    }
+    footer ul li.item h5{
+        font-size: 14px;
+    }
+    footer ul li.item a{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:980px){
+    #home section.spotlight div.left {
+        width: 75%;
+    }
+    #home section.spotlight div.left p{
+        font-size: 16px;
+    }
+    #ecosystem section.startups p {
+        width: 100%;
+    }
+    #ecosystem section.startups ul li {
+        height: 35px;
+    }
+    #ecosystem section.startups ul li img {
+        height: 100%;
+    }
+    #aim section.content {
+        width: 95%;
+    }
+    #aim section.content div.right h3 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #projects section.content div.left {
+        width: 85%;
+    }
+    #projects section.content div.right ul li{
+        text-align: left;
+    }
+    #startups section.bottom ul li {
+        width: 46%;
+    }
+    #mission section.content {
+        flex-direction: column-reverse;
+    }
+    #mission section.content div.right {
+        max-height: unset;
+        position: unset;
+        width: 100%;
+    }
+    #mission section.content div.left{
+        width: 100%;
+    }
+    #mission section.content div.left h3{
+        display: none;
+    }
+    #mission section.content h3.responsive{
+        display: block;
+    }
+    #mission section.content div.left ul{
+        margin-top: 50px;
+    }
+    #team h3 {
+        width: 35%;
+    }
+    #team ul {
+        width: 100%;
+    }
+    #team ul li a {
+        width: 80%;
+    }
+    #techies_park ul li {
+        width: 48%;
+    }
+    #village section.content div.left { 
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #village section.content div.right { 
+        width: 100%;
+    }
+    #village section.content div.left h3 {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto 30px;
+        font-size: 27px;
+    }
+    #village section.content div.left h3::before{
+        left: 65px;
+        width: 180px;
+    }
+    #upcoming ul li span.icon {
+        width: 40px;
+    }
+    footer ul li.item.large p {
+        width: 70%;
+    }
+    footer ul li.item a.link {
+        font-size: 14px;
+    }
+    footer ul li.item div.social a.icon {
+        height: 17px;
+    }
+    footer ul li.item {
+        width: 24%;
+    }
+    
+}
+
+@media all and (max-width:768px){
+    #home section.spotlight {
+        padding: 100px 0px 120px;
+    }
+    #home section.spotlight div.left h2{
+        font-size: 44px;
+    }
+    #home section.spotlight div.left {
+        width: 90%;
+    }
+    #ecosystem section.startups h3 {
+        width: 90%;
+        font-size: 30px;
+    }
+    #ecosystem section.startups h3::before {
+        left: 100px;
+        top: 40px;
+        width: 34%;
+    }
+    #ecosystem section.startups {
+        width: 100%;
+    }
+    #ecosystem section.startups ul {
+        width: 60%;
+    }
+    #aim section.content{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    #aim section.content div.left {
+        width: 45%;
+    }
+    #aim section.content div.right {
+        width: 80%;
+    }
+    #projects section.content div.left h3 {
+        font-size: 32px;
+    }
+    #projects section.content div.left {
+        width: 90%;
+    }
+    #projects section.content div.right {
+        width: 100%;
+    }
+    #projects section.content div.right ul li:first-child {
+        transform: translateY(20px);
+    }
+    #projects section.content div.right ul li:nth-child(3) {
+        transform: translateY(20px);
+    }
+    #startups section.top {
+        width: 90%;
+    }
+    #startups section.bottom ul li {
+        padding: 80px 20px 20px;
+    }
+    #team ul {
+        width: 100%;
+    }
+    #team ul li {
+        width: 45%;
+    }
+    #team h3 {
+        width: 60%;
+    }
+    #ambassador div.banner {
+        width: 90%;
+    }
+    #interest{
+        padding-bottom: 100px;
+    }
+    #interest section.content div.left h3 {
+        font-size: 30px;
+    }
+    #interest section.content div.right ul li {
+        width: 100%;
+    }
+    #interest section.content div.right ul li div.image {
+        width: 7%;
+    }
+    #interest section.content div.right ul li div.content h4 {
+        font-size: 18px;
+    }
+    #interest section.content div.left {
+        margin-bottom: 60px;
+    }
+    #mission{
+        padding-bottom: 50px;
+    }
+    #program{
+        padding-top: 50px;
+    }
+    #program h3 {
+        font-size: 32px;
+    }
+    #program ul li span.icon {
+        width: 65px;
+    }
+    #program ul li {
+        min-height: 280px;
+        width: 80%;
+        padding: 60px 20px 20px;
+    }
+    #techies_park section.top h3 {
+        font-size: 30px;
+    }
+    #techies_park section.top h3::before {
+        left: 50px;
+    }
+    #village section.content div.left h3::before {
+        left: 25px;
+    }
+    #village section.content div.left h3 {
+        width: 50%;
+    }
+    #upcoming section.top h3 span.line {
+        right: 35px;
+    }
+    #upcoming section.top h3::before {
+        right: 120px;
+    }
+    #upcoming section.top {
+        width: 70%;
+    }
+    #upcoming ul li {
+        width: 100%;
+    }
+    #upcoming ul li div.course {
+        width: 93%;
+    }
+    footer ul li.item.large p {
+        width: 90%;
+    }
+}
+
+@media all and (max-width:640px){
+    #home section.bg{
+        padding-top: 30px;
+    }
+    #home header h1 {
+        width: 70px;
+    }
+    #home section.spotlight{
+        padding-bottom: 80px;
+    }
+    #home section.spotlight div.left h2 {
+        font-size: 36px;
+    }
+    #ecosystem section.startups p{
+        font-size: 15px;
+    }
+    #ecosystem section.startups h3 {
+        font-size: 28px;
+    }
+    #ecosystem section.startups h3 span.heading {
+        font-size: 28px;
+    }
+    #ecosystem section.startups ul {
+        width: 70%;
+    }
+    #ecosystem section.startups h3::before {
+        left: 72px;
+        top: 34px;
+        width: 37%;
+    }
+    #aim section.content div.left {
+        width: 55%;
+    }
+    #aim section.content div.right h3{
+        font-size: 28px;
+    }
+    #aim section.content div.right p{
+        font-size: 15px;
+    }
+    #aim {
+        padding-bottom: 100px;
+    }
+    #projects section.content div.left h3 {
+        font-size: 28px;
+    }
+    #projects section.content div.left p {
+        font-size: 15px;
+    }
+    #projects section.content div.right ul li {
+        width: 100%;
+    }
+    #projects section.content div.right ul li:first-child {
+        transform: translateY(0px);
+    }
+    #projects section.content div.right ul li:nth-child(3) {
+        transform: translateY(0px);
+    }
+    #program ul li {
+        min-height: 300px;
+    }
+    #projects {
+        padding-bottom: 50px;
+    }
+    #startups {
+        padding-top: 50px;
+    }
+    #startups section.top h3 {
+        font-size: 28px;
+    }
+    #startups section.top p {
+        font-size: 15px;
+    }
+    #startups section.bottom ul li {
+        width: 100%;
+        min-height: 300px;
+    }
+    #team h3 {
+        width: 60%;
+    }
+    #team ul li {
+        width: 45%;
+    }
+    #team ul li a {
+        width: 85%;
+    }
+    #interest {
+        padding-top: 100px;
+    }
+    #interest section.content div.left h3 {
+        font-size: 28px;
+    }
+    #interest section.content div.right ul li div.content h4 {
+        font-size: 16px;
+    }
+    #interest section.content div.right ul li div.content p {
+        font-size: 14px;
+    }
+    #program h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    #program ul li {
+        width: 100%;
+    }
+    #program ul li div.enquiry span.label{
+        font-size: 14px;
+    }
+    #techies_park section.top {
+        width: 100%;
+    }
+    #techies_park ul li {
+        width: 95%;
+    }
+    #village section.content div.left h3{
+        width: 60%;
+    }
+    #village section.content div.right a.image {
+        width: 60px;
+    }
+    #upcoming section.top {
+        width: 100%;
+    }
+    #upcoming section.top h3 span.line {
+        right: 80px;
+    }
+    #upcoming ul li div.course {
+        width: 89%;
+    }
+    footer ul li.item.large {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    footer ul li.item.large p {
+        width: 100%;
+    }
+    footer ul li.item {
+        width: 30%;
+    }
+}
+
+@media all and (max-width:480px){
+    #home section.bg {
+        background-size: 55%;
+    }
+    #home section.spotlight div.left h2 {
+        font-size: 28px;
+    }
+    #home section.spotlight div.left p {
+        font-size: 15px;
+    }
+    #home section.spotlight div.left {
+        width: 100%;
+    }
+    #home header h1 {
+        width: 60px;
+    }
+    #ecosystem section.startups h3 {
+        font-size: 24px;
+    }
+    #ecosystem section.startups h3::before {
+        left: 32px;
+        width: 41%;
+        top: 30px;
+    }
+    #ecosystem section.startups h3 span.heading {
+        font-size: 24px;
+    }
+    #ecosystem section.startups p {
+        font-size: 14px;
+    }
+    #ecosystem section.startups ul {
+        width: 65%;
+    }
+    #ecosystem section.startups ul li {
+        height: 30px;
+    }
+    #ecosystem{
+        padding-top: 50px;
+    }
+    #aim section.content div.left {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    #aim section.content div.right h3 {
+        font-size: 24px;
+    }
+    #aim section.content div.right {
+        width: 100%;
+    }
+    #aim section.content div.right p{
+        font-size: 14px;
+    }
+    #projects section.content div.left h3::before {
+        left: 30px;
+    }
+    #projects section.content div.left {
+        width: 100%;
+    }
+    #startups section.top {
+        width: 100%;
+    }
+    #startups section.top h3 {
+        font-size: 24px;
+    }
+    #startups section.top p {
+        font-size: 14px;
+    }
+    #startups section.bottom ul li {
+        padding-top: 60px;
+        margin-right: 0;
+    }
+    #team h3 {
+        font-size: 24px;
+    }
+    #team ul li {
+        width: 80%;
+        margin-right: 0;
+    }
+    #team ul li a {
+        width: 80%;
+    }
+    #ambassador div.responsive img{
+        display: block;
+    }
+    #ambassador div.responsive {
+        width: 80%;
+    }
+    #ambassador div.banner img{
+        display: none;
+    }
+    #interest section.content div.left h3 {
+        font-size: 24px;
+    }
+    #interest section.content div.right ul li div.image {
+        width: 10%;
+    }
+    #mission section.content h3.responsive{
+        font-size: 24px;
+    }
+    #mission section.content div.right{
+        padding: 15px;
+    }
+    #mission section.content div.right p{
+        font-size: 14px;
+    }
+    #mission section.content div.left ul li h4 {
+        font-size: 18px;
+    }
+    #mission section.content div.left ul li p{
+        font-size: 14px;
+    }
+    #mission section.content div.left ul li {
+        margin-bottom: 20px;
+    }
+    #program h3 {
+        font-size: 24px;
+    }
+    #program ul li {
+        padding: 50px 15px 15px;
+        margin-right: 0;
+    }
+    #program ul li {
+        min-height: 310px;
+    }
+    #techies_park section.top h3 {
+        font-size: 24px;
+    }
+    #village section.content div.left h3 {
+        font-size: 20px;
+    }
+    #village section.content div.left h3::before {
+        left: 30px;
+        width: 130px;
+    }
+    #village section.content div.left ul li{
+        flex-direction: column;
+    }
+    #village section.content div.left ul li{
+        margin-bottom: 15px;
+    }
+    #village section.content {
+        padding: 40px 15px 40px 13px;
+    }
+    #village section.content div.left ul li span.img_container{
+        margin-bottom: 15px;
+    }
+    #village section.content div.right a.image{
+        width: 50px;
+    }
+    #upcoming section.top h3 {
+        font-size: 20px;
+    }
+    #upcoming section.top h3 span.line {
+		right: 63px;
+		width: 100px;
+		}
+    #upcoming ul li div.course div.content h4 {
+        font-size: 18px;
+    }
+    #upcoming ul li div.course div.content span.year {
+        font-size: 20px;
+    }
+    #upcoming section.top {
+        width: 75%;
+    }
+    #upcoming ul li div.course div.admission span.label {
+        font-size: 14px;
+    }
+    #upcoming{
+        padding-bottom: 50px;
+    }
+    footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    footer ul li.item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    footer ul li.item a.link {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width:360px){
+    #home section.bg {
+        background-size: 60%;
+    }
+    #home section.spotlight{
+        padding-top: 80px;
+    }
+    #ecosystem {
+        padding-top: 0px;
+    }
+    #ecosystem section.startups h3 {
+        width: 100%;
+    }
+    #ecosystem section.startups h3::before {
+        background: none;
+    }
+    #aim section.content div.left {
+        width: 90%;
+    }
+    #projects section.content div.left h3 {
+        font-size: 24px;
+    }
+    #projects section.content div.left p {
+        font-size: 14px;
+    }
+    #projects section.content div.right ul li h4{
+        margin-bottom: 10px;
+    }
+    #startups section.top h3 {
+        font-size: 22px;
+    }
+    #startups section.bottom ul li{
+        min-height: 330px;
+    }
+    #team ul li {
+        width: 80%;
+        margin-right: 0;
+    }
+    #team h3::after{
+        width: 200px;
+    }
+    #team ul li a {
+        width: 75%;
+    }
+    #team h3 {
+        width: 80%;
+    }
+    #interest section.content div.right ul li {
+        flex-direction: column;
+    }
+    #interest section.content div.right ul li div.image {
+        width: 15%;
+        margin-bottom: 20px;
+    }
+    #mission section.content h3.responsive::before{
+        left: 0;
+    }
+    #mission section.content div.right h1 {
+        width: 70px;
+    }
+    #mission section.content div.right h5::before{
+        width: 3px;
+    }
+    #program{
+        padding-bottom: 50px;
+    }
+    #program ul li {
+        margin-right: 0;
+    }
+    #program ul li {
+        width: 90%;
+        min-height: 390px;
+    }
+    #techies_park ul li {
+        width: 100%;
+    }
+    #techies_park {
+        padding-bottom: 0px;
+    }
+    #village section.content div.left h3 {
+        width: 70%;
+    }
+    #village section.content div.right a.image {
+        width: 40px;
+        top: 40%;
+    }
+    #upcoming{
+        padding-top: 60px;
+    }
+    #upcoming section.top h3 span.line {
+        right: 65px;
+    }
+    #upcoming section.top h3::before {
+        right: 0px;
+    }
+    #upcoming ul li{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    #upcoming ul li span.icon{
+        margin-bottom: 20px;
+    }
+    footer ul li.item h1 {
+        width: 60px;
+    }
+    footer ul li.item.large {
+        width: 100%;
+    }
+    footer p.copyright{
+        margin-top: 20px;
+    }
+    footer ul li.item div.social a.icon{
+        margin-right: 0;
+    }
+}
